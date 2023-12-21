@@ -1,3 +1,4 @@
+/*Variables*/
 :root{
     --font: 'Poppins', sans-serif;
     --background: #000;
@@ -6,6 +7,8 @@
     --orange: #FF9E0A;
     --white: #FFF;
 }
+
+/*Selectores globales*/
 html {
     box-sizing: border-box;
     font-size: 62.5%; /* 1rem = 10px */
@@ -17,4 +20,51 @@ body{
     font-family: var(--font);
     font-size: 1.6rem;
     line-height: 2;
+    background-color: var(--background);
+}
+h1{
+    color: var(--white);
+    padding: 2rem;
+    margin: 0;
+    font-size: 6rem;
+}
+h2{
+    font-size: 5rem;
+    font-weight: normal;
+    color: var(--white);
+    margin: 0;
+    padding: 2rem;
+}
+button{
+    color: var(--white);
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+/* Calculadora */
+.contenedor{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+.resultado{
+    display: flex;
+    justify-content: end;
+}
+.botones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+.botones__x{
+    background-color: var(--lightgray);
+    color: var(--background);
+}
+.botones__op{
+    background-color: var(--orange);
+}
+.botones__num{
+    background-color: var(--darkgray);
 }
