@@ -1,0 +1,20 @@
+:root{
+    --font: 'Poppins', sans-serif;
+    --background: #000;
+    --darkgray: #2C2C2C;
+    --lightgray: #A6A6A6; 
+    --orange: #FF9E0A;
+    --white: #FFF;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--font);
+    font-size: 1.6rem;
+    line-height: 2;
+}
