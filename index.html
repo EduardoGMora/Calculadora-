@@ -20,38 +20,38 @@
 <body>
     <h1>Calculadora web</h1>
     <section class="contenedor">
-        <div class="resultado">
-            <h2>0</h2>
+        <div class="resultado_display">
+            <h2 id="resultado">0</h2>
         </div>
         <div class="botones">
-            <button class="botones__x">AC</button>
-            <button class="botones__x">&plusmn;</button>
-            <button class="botones__x">&percnt;</button>
-            <button class="botones__op">&divide;</button>
+            <button class="botones__x" onclick="clearAll()">AC</button>
+            <button class="botones__x" onclick="">&plusmn;</button>
+            <button class="botones__x" onclick="">&percnt;</button>
+            <button class="botones__op" onclick="addOperator('/')">&divide;</button>
 
-            <button class="botones__num">7</button>
-            <button class="botones__num">8</button>
-            <button class="botones__num">9</button>
-            <button class="botones__op">&times;</button>
+            <button class="botones__num" onclick="addNumb(7)" id="7">7</button>
+            <button class="botones__num" onclick="addNumb(8)" id="8">8</button>
+            <button class="botones__num" onclick="addNumb(9)" id="9">9</button>
+            <button class="botones__op" onclick="addOperator('x')">&times;</button>
 
-            <button class="botones__num">4</button>
-            <button class="botones__num">5</button>
-            <button class="botones__num">6</button>
-            <button class="botones__op">&minus;</button>
+            <button class="botones__num" onclick="addNumb(4)" id="4">4</button>
+            <button class="botones__num" onclick="addNumb(5)" id="5">5</button>
+            <button class="botones__num" onclick="addNumb(6)" id="6">6</button>
+            <button class="botones__op" onclick="addOperator('-')">&minus;</button>
 
-            <button class="botones__num">1</button>
-            <button class="botones__num">2</button>
-            <button class="botones__num">3</button>
-            <button class="botones__op">&plus;</button>
+            <button class="botones__num" onclick="addNumb(1)" id="1">1</button>
+            <button class="botones__num" onclick="addNumb(2)" id="2">2</button>
+            <button class="botones__num" onclick="addNumb(3)" id="3">3</button>
+            <button class="botones__op" onclick="addOperator('+')">&plus;</button>
 
-            <button class="botones__num">0</button>
+            <button class="botones__num" onclick="addNumb(0)">0</button>
             <button class="botones__num">.</button>
-            <button class="botones__op">&equals;</button>
+            <button class="botones__op" onclick="calculate()">&equals;</button>
         </div>
     </section>
 </body>
 
 <footer>
-    <script src="scrpit.js"></script>
+    <script src="js/script.js"></script>
 </footer>
 </html>

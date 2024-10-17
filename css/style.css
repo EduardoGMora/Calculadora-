@@ -24,9 +24,9 @@ body{
 }
 h1{
     color: var(--white);
-    padding: 2rem;
     margin: 0;
     font-size: 6rem;
+    padding: 2rem;
 }
 h2{
     font-size: 5rem;
@@ -39,19 +39,34 @@ button{
     color: var(--white);
     outline: none;
     border: none;
-    border-radius: 5rem;
+    padding: 1rem;
+    border-radius: 50px;
     font-size: 5rem;
     cursor: pointer;
 }
 
+@media (max-width: 768px){
+    button{
+        border-radius: 100%;
+        font-size: 4rem;
+    }
+}
+
 /* Calculadora */
 .contenedor{
-    width: min(90%, 120rem);
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
 }
-.resultado{
+
+.resultado_display{
     display: flex;
     justify-content: end;
+    background-color: var(--background);
+    color: var(--white);
+    border: none;
 }
 .botones{
     display: grid;
