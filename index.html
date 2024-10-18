@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora web</title>
     <meta name="description" content="Calculadora web responsive">
+    <meta name="keywords" content="Calculadora, web, responsive">
+    <meta name="author" content="Eduardo Gómez">
+
+    <link rel="icon" href="image/icons8-calculadora-de-manzana-48.png" type="image/x-icon">
 
     <link rel="Preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
@@ -24,24 +28,24 @@
             <h2 id="resultado">0</h2>
         </div>
         <div class="botones">
-            <button class="botones__x" onclick="clearAll()">AC</button>
+            <button class="botones__x" id="clearAll">AC</button>
             <button class="botones__x" onclick="">&plusmn;</button>
             <button class="botones__x" onclick="">&percnt;</button>
             <button class="botones__op" onclick="addOperator('/')">&divide;</button>
 
-            <button class="botones__num" onclick="addNumb(7)" id="7">7</button>
-            <button class="botones__num" onclick="addNumb(8)" id="8">8</button>
-            <button class="botones__num" onclick="addNumb(9)" id="9">9</button>
-            <button class="botones__op" onclick="addOperator('x')">&times;</button>
+            <button class="botones__num" id="7">7</button>
+            <button class="botones__num" id="8">8</button>
+            <button class="botones__num" id="9">9</button>
+            <button class="botones__op" onclick="addOperator('*')">&times;</button>
 
-            <button class="botones__num" onclick="addNumb(4)" id="4">4</button>
-            <button class="botones__num" onclick="addNumb(5)" id="5">5</button>
-            <button class="botones__num" onclick="addNumb(6)" id="6">6</button>
+            <button class="botones__num" id="4">4</button>
+            <button class="botones__num" id="5">5</button>
+            <button class="botones__num" id="6">6</button>
             <button class="botones__op" onclick="addOperator('-')">&minus;</button>
 
-            <button class="botones__num" onclick="addNumb(1)" id="1">1</button>
-            <button class="botones__num" onclick="addNumb(2)" id="2">2</button>
-            <button class="botones__num" onclick="addNumb(3)" id="3">3</button>
+            <button class="botones__num" id="1">1</button>
+            <button class="botones__num" id="2">2</button>
+            <button class="botones__num" id="3">3</button>
             <button class="botones__op" onclick="addOperator('+')">&plus;</button>
 
             <button class="botones__num" onclick="addNumb(0)">0</button>
