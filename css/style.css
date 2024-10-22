@@ -40,15 +40,18 @@ button{
     outline: none;
     border: none;
     padding: 1rem;
+    width: 100%;
     border-radius: 50px;
     font-size: 5rem;
     cursor: pointer;
 }
 
-@media (max-width: 768px){
+@media (max-width: 600px){
     button{
-        border-radius: 100%;
-        font-size: 4rem;
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        font-size: 3.5rem;
     }
 }
 
@@ -72,14 +75,31 @@ button{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+    justify-items: center;
 }
+
+@media (max-width: 768px){
+    .botones{
+        gap: 1rem;
+    }
+}
+
 .botones__x{
     background-color: var(--lightgray);
     color: var(--background);
 }
+.botones__x:hover{
+    background-color: #cecece;
+}
 .botones__op{
     background-color: var(--orange);
 }
+.botones__op:hover{
+    background-color: #ef9e2d;
+}
 .botones__num{
     background-color: var(--darkgray);
+}
+.botones__num:hover{
+    background-color: #5b5a5a;
 }
