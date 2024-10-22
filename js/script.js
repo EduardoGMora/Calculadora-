@@ -1,9 +1,11 @@
 let resultado = document.querySelector('#resultado')
 let value = 0
 
+
+// agrega numeros al valor en pantalla
 document.querySelectorAll('.botones__num').forEach (boton => {
     boton.addEventListener('click', (e) => {
-        let number = e.target.innerText
+        let number = e.target.id
 
         if (value == '0') {
             value = number.toString()
@@ -23,23 +25,29 @@ document.querySelectorAll('.botones__num').forEach (boton => {
     })
 })
 
+// agrega operadores al valor en pantalla
+document.querySelectorAll('.botones__op').forEach (boton => {
+    boton.addEventListener('click', (e)  => {
+        let operator = e.target.id
+        if (value == '0')
+            return
+        value += operator.toString()
+
+        updateDisplay()
+    })
+})
+
+// divide entre 100 el valor en pantalla
 document.getElementById('porcentaje').addEventListener('click', () => {
     value = value / 100
     updateDisplay()
 })
 
+// cambia el valor en pantalla a negativo o positivo
 document.getElementById('masmenos').addEventListener('click', () => {
     value = value * -1
     updateDisplay()
 })
-
-function addOperator(operator) {
-    if (value == '0') {
-        return
-    }
-    value += operator.toString()
-    updateDisplay()
-}
 
 document.getElementById('clearAll').addEventListener('click', () => {
     value = '0'

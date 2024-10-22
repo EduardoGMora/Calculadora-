@@ -91,10 +91,10 @@ button{
 .botones__x:hover{
     background-color: #cecece;
 }
-.botones__op{
+.botones__op,.boton__equal{
     background-color: var(--orange);
 }
-.botones__op:hover{
+.botones__op:hover,.boton__equal:hover{
     background-color: #ef9e2d;
 }
 .botones__num{
