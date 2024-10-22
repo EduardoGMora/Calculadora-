@@ -23,6 +23,16 @@ document.querySelectorAll('.botones__num').forEach (boton => {
     })
 })
 
+document.getElementById('porcentaje').addEventListener('click', () => {
+    value = value / 100
+    updateDisplay()
+})
+
+document.getElementById('masmenos').addEventListener('click', () => {
+    value = value * -1
+    updateDisplay()
+})
+
 function addOperator(operator) {
     if (value == '0') {
         return
